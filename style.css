@@ -1,0 +1,51 @@
+/* CSS file: style.css */
+
+/* Resetting some default browser styles */
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Navigation menu styling */
+#navMenu {
+    position: fixed; /* Fixed position at the top */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full width */
+    background-color: white; /* Initial background color */
+    padding: 10px 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    transition: background-color 0.3s; /* Smooth transition for color change */
+    z-index: 1000; /* To make sure it stays on top */
+}
+
+/* Styling the unordered list */
+#navMenu ul {
+    display: flex; /* Display items in a row */
+    justify-content: center; /* Center items */
+}
+
+/* Styling the list items */
+#navMenu li {
+    margin: 0 15px;
+}
+
+/* Styling the links */
+#navMenu a {
+    color: black; /* Initial text color */
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+/* Change color when hovering over a link */
+#navMenu a:hover {
+    color: blue;
+}
+
+/* Styling the navigation menu when scrolled */
+#navMenu.scrolled {
+    background-color: lightblue; /* Change background color */
+}
